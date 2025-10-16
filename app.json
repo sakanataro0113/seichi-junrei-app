@@ -13,13 +13,23 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sakana.seichiapp",
+      "config":{
+        "googleMaps":"AIzaSyD_srrKxluCGqxTskV7xhR0gC-a5u2R0FA"
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
+      "config":{
+        "googleMaps":{
+          "apikey":"AIzaSyBuM8Oo81JbFPEN9472JhttL5x7_pFJ_RU"
+        }
+      },
+      "package": "com.sakana.seichiapp",
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false
     },
