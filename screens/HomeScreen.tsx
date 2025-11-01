@@ -16,7 +16,7 @@ interface Seichi{
     };
 }
 
-const HomeScreen=()=>{
+const HomeScreen=({navigation}:any)=>{
     //聖地リストを保存するためのstate
     const [seichiList,setSeichiList]=useState<Seichi[]>([]);
 
@@ -59,6 +59,7 @@ const HomeScreen=()=>{
                         longitude:seichi.location.lng,
                     }}
                     title={seichi.name}
+                    onPress={()=>navigation.navigate("SeichiDetail",{seichiId:seichi.id})}
                 />
             ))}
             </MapView>
